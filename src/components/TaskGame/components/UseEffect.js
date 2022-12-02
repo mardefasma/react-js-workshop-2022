@@ -8,10 +8,11 @@ function UseEffect(props) {
 
   const [count, setCount] = useState(0);
 
-  // TODO: Find the Bugs
+  // TODO: Find the Bugs (Solved)
+  // Note: without depedency, useEffect will triggered on every update (hence infinite loop)
   useEffect(() => {
     setCount(Math.random);
-  });
+  }, []);
 
   return (
     <div>

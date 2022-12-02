@@ -11,8 +11,9 @@ function UseStateClosure(props) {
   const handleClickAsync = () => {
     console.log("handlernya sudah onclick");
     setTimeout(() => {
-      // TODO: Find the Bugs
-      setCount(count + 1);
+      // TODO: Find the Bugs (Solved)
+      // Note: without using functional way, setCount closures and update the previous same value
+      setCount(count => count + 1);
     }, 1000);
   };
 

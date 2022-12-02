@@ -2,8 +2,9 @@ import { Button, Divider } from "antd";
 
 function UseState(props) {
   const handleNext = () => {
-    // TODO: Find the Bugs
-    props.setStep(1);
+    // TODO: Find the Bugs (Solved)
+    // Note: Next step of this page (index 2) is page index 3 not 1
+    props.setStep(3);
   };
 
   return (

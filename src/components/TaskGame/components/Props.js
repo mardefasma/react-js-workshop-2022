@@ -19,16 +19,19 @@ function Props(props) {
       <div>
         <Row justify="space-around">
           <Col span={4}>
-            {/* TODO: Find the Bugs */}
+            {/* TODO: Find the Bugs (Solved) */}
+            {/* Note: change prop using var */}
             <Square backgroundColor={color1} />
           </Col>
           <Col span={4}>
-            {/* TODO: Find the Bugs */}
-            <Square />
+            {/* TODO: Find the Bugs (Solved) */}
+            {/* Note: change prop using var */}
+            <Square backgroundColor={color2} />
           </Col>
           <Col span={4}>
-            {/* TODO: Find the Bugs */}
-            <Square />
+            {/* TODO: Find the Bugs (Solved) */}
+            {/* Note: change prop using var */}
+            <Square backgroundColor={color3} />
           </Col>
         </Row>
       </div>
