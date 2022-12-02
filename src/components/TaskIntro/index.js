@@ -33,8 +33,6 @@ function TaskIntro() {
         <Image src="/task-intro.png" width="50%" />
       </div>
       <Divider />
-      {/* TODO: Find the Bugs */}
-      {/* Ini seharusnya redirect ke TaskGame, tapi kok malah ke Home */}
       <Button
         type={isProgress ? "dashed" : "primary"}
         loading={isProgress}
