@@ -12,9 +12,9 @@ function Destructuring(props) {
   };
 
   // TODO: Find the Bugs
-  var color1 = colors.color1,
-    color2 = colors.color1,
-    color3 = colors.color1;
+  var color1 = colors.color1;
+  var color2 = colors.color2;
+  var color3 = colors.color3;
 
   return (
     <div>

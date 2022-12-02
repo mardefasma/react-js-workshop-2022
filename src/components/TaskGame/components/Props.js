@@ -23,12 +23,10 @@ function Props(props) {
             <Square backgroundColor={color1} />
           </Col>
           <Col span={4}>
-            {/* TODO: Find the Bugs */}
-            <Square />
+            <Square backgroundColor={color2} />
           </Col>
           <Col span={4}>
-            {/* TODO: Find the Bugs */}
-            <Square />
+            <Square backgroundColor={color3} />
           </Col>
         </Row>
       </div>
