@@ -11,7 +11,7 @@ function UseEffect(props) {
   // TODO: Find the Bugs
   useEffect(() => {
     setCount(Math.random);
-  });
+  }, []);
 
   return (
     <div>
