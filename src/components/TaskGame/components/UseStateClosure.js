@@ -12,8 +12,8 @@ function UseStateClosure(props) {
     console.log("handlernya sudah onclick");
     setTimeout(() => {
       // TODO: Find the Bugs
-      setCount(count + 1);
-    }, 1000);
+      setCount(count => count + 1);
+    }, 1);
   };
 
   return (
