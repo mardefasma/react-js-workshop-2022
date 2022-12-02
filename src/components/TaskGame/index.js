@@ -16,7 +16,7 @@ function TaskGame() {
     "4. useState Closure",
     "5. useEffect",
     "6. Fetching API",
-    "Congratulations",
+    "Congratulations 🎊 🎉",
   ];
 
   return (

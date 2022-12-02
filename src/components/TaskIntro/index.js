@@ -19,7 +19,8 @@ function TaskIntro() {
           oleh @Fasma karena kebanyakan makan indomie. <i>Bugs</i> kali ini
           tidak memerlukan restart <i>"npm start"</i> karena dari reactJS sudah
           menyediakan hot reload yang otomatis melakukan render saat kalian
-          melakukan perubahan kodingan
+          melakukan perubahan kodingan. Kalian juga bisa buka lewat handphone
+          bila dalam subnet yang sama
         </p>
         <p>
           <b>
@@ -37,7 +38,7 @@ function TaskIntro() {
       <Button
         type={isProgress ? "dashed" : "primary"}
         loading={isProgress}
-        href="/"
+        href="/task/game"
       >
         {isProgress ? "Baca dulu" : "Letgo!"}
       </Button>
