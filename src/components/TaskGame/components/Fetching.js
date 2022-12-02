@@ -16,10 +16,10 @@ function Fetching(props) {
       .then((resJson) => {
         // TODO: Find the Bugs
         const pokemonList = resJson;
-
+        console.log(resJson)
         // TODO: Find the Bugs
         // setPokemonList will broken the page
-        // setPokemonList(pokemonList);
+        setPokemonList(pokemonList.result);
         console.log(pokemonList);
       });
   }, []);
