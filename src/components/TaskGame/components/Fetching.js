@@ -19,7 +19,7 @@ function Fetching(props) {
 
         // TODO: Find the Bugs
         // setPokemonList will broken the page
-        // setPokemonList(pokemonList);
+        setPokemonList(pokemonList.results);
         console.log(pokemonList);
       });
   }, []);
