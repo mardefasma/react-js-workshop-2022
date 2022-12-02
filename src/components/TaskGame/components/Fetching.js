@@ -14,12 +14,13 @@ function Fetching(props) {
     fetch(pokemonURL)
       .then((res) => res.json())
       .then((resJson) => {
-        // TODO: Find the Bugs
-        const pokemonList = resJson;
+        // TODO: Find the Bugs (Solved)
+        // Note: Need to get the results
+        const pokemonList = resJson.results;
 
-        // TODO: Find the Bugs
-        // setPokemonList will broken the page
-        // setPokemonList(pokemonList);
+        // TODO: Find the Bugs (Solved)
+        // Note: useState setter requires correct object which is list of names, not object
+        setPokemonList(pokemonList);
         console.log(pokemonList);
       });
   }, []);
