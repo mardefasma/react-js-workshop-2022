@@ -7,7 +7,7 @@ function TaskIntro() {
   useEffect(() => {
     setInterval(() => {
       setIsProgress(false);
-    }, 10000);
+    }, 1000);
   });
 
   return (
