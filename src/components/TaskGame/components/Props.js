@@ -6,6 +6,10 @@ function Props(props) {
     props.setStep(2);
   };
 
+  const handleBack = () => {
+    props.setStep(0);
+  };
+
   var colors = {
     color1: "red",
     color2: "yellow",
@@ -24,17 +28,20 @@ function Props(props) {
           </Col>
           <Col span={4}>
             {/* TODO: Find the Bugs */}
-            <Square />
+            <Square backgroundColor={color2} />
           </Col>
           <Col span={4}>
-            {/* TODO: Find the Bugs */}
-            <Square />
+            <Square backgroundColor={color3} />
           </Col>
         </Row>
       </div>
       <p>Pengennya warna warni seperti kotak dibawah ini</p>
       <Image src="/destructuring.png" width="50%" />
       <Divider />
+      <Button onClick={handleBack} type="primary">
+        Back
+      </Button>
+      ||
       <Button onClick={handleNext} type="primary">
         Next?
       </Button>
