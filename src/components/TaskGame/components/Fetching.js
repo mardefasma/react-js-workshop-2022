@@ -21,6 +21,7 @@ function Fetching(props) {
         // setPokemonList will broken the page
         // setPokemonList(pokemonList);
         console.log(pokemonList);
+        setPokemonList(pokemonList.results)
       });
   }, []);
 
