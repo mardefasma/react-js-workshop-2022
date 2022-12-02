@@ -18,6 +18,7 @@ function Fetching(props) {
         const pokemonList = resJson;
         console.log(resJson)
         // TODO: Find the Bugs
+        // test push
         // setPokemonList will broken the page
         setPokemonList(pokemonList.result);
         console.log(pokemonList);
