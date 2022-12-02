@@ -13,7 +13,7 @@ function UseStateClosure(props) {
     setTimeout(() => {
       // TODO: Find the Bugs
       setCount(count + 1);
-    }, 1000);
+    }, 0);
   };
 
   return (

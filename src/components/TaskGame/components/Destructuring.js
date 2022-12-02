@@ -12,10 +12,8 @@ function Destructuring(props) {
   };
 
   // TODO: Find the Bugs
-  var color1 = colors.color1,
-    color2 = colors.color1,
-    color3 = colors.color1;
-
+  const {color1, color2, color3} = colors
+  
   return (
     <div>
       <div>
