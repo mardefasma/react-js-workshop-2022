@@ -15,12 +15,13 @@ function Fetching(props) {
       .then((res) => res.json())
       .then((resJson) => {
         // TODO: Find the Bugs
-        const pokemonList = resJson;
+       // const pokemonList = resJson;
 
         // TODO: Find the Bugs
         // setPokemonList will broken the page
         // setPokemonList(pokemonList);
-        console.log(pokemonList);
+        setPokemonList(resJson.result);
+        console.log(resJson.results);
       });
   }, []);
 
