@@ -1,6 +1,6 @@
-import { Button, Col, Divider, Image, List, Row, Typography } from "antd";
+import { Button, Divider, Image, List, Row, Typography } from "antd";
 import { useEffect, useState } from "react";
-import Square from "./Square";
+// import Square from "./Square";
 
 function Fetching(props) {
   const handleNext = () => {
@@ -14,12 +14,11 @@ function Fetching(props) {
     fetch(pokemonURL)
       .then((res) => res.json())
       .then((resJson) => {
-        // TODO: Find the Bugs
-        const pokemonList = resJson;
+        // const pokemonList = resJson;
 
         // TODO: Find the Bugs
         // setPokemonList will broken the page
-        // setPokemonList(pokemonList);
+        setPokemonList(resJson.results);
         console.log(pokemonList);
       });
   }, []);
