@@ -1,4 +1,4 @@
-import { Button, Col, Divider, Image, Row } from "antd";
+import { Button, Col, Divider, Image, List, Row, Typography } from "antd";
 import { useEffect, useState } from "react";
 import Square from "./Square";
 
@@ -28,17 +28,23 @@ function Fetching(props) {
     <div>
       <div>
         <p>Sekarang kita coba fetch API nama pokemon</p>
-        <Image src="/fetching.png" width="50%" />
+        <Image src="/fetching.png" width="20%" />
       </div>
       <Divider />
       <Row>
-        {pokemonList.map((item) => {
-          return (
-            <Col span={6}>
-              <Square text={item.name} />
-            </Col>
-          );
-        })}
+        <List
+          grid={{
+            column: 4,
+          }}
+          dataSource={pokemonList}
+          renderItem={(item) => (
+            <List.Item>
+              <Typography.Text style={{ color: "white" }}>
+                {item.name}
+              </Typography.Text>
+            </List.Item>
+          )}
+        />
       </Row>
       <Divider />
       <Button onClick={handleNext} type="primary">
