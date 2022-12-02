@@ -1,9 +1,8 @@
 import { Button, Divider } from "antd";
 
 function UseState(props) {
-  const handleNext = () => {
-    // TODO: Find the Bugs
-    props.setStep(1);
+  const handleNext = () =>{
+    props.setStep(3);
   };
 
   return (

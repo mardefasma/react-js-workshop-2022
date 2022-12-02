@@ -8,10 +8,9 @@ function UseEffect(props) {
 
   const [count, setCount] = useState(0);
 
-  // TODO: Find the Bugs
   useEffect(() => {
     setCount(Math.random);
-  });
+  },[]);
 
   return (
     <div>
